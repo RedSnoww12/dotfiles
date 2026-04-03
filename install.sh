@@ -36,6 +36,10 @@ echo "=== Neovim ==="
 link ".config/nvim" "$HOME/.config/nvim"
 
 echo ""
+echo "=== Kitty ==="
+link ".config/kitty" "$HOME/.config/kitty"
+
+echo ""
 echo "=== Tmux ==="
 link ".tmux.conf" "$HOME/.tmux.conf"
 
