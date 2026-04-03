@@ -9,7 +9,7 @@ vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
 vim.keymap.set('n', '<c-h>', ':wincmd h<CR>')
 vim.keymap.set('n', '<c-j>', ':wincmd j<CR>')
 
-vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
+vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>', { desc = "Clear search" })
 vim.wo.number = true
 
 
@@ -42,11 +42,11 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 -- greatest remap ever
-vim.keymap.set("x", "<leader>p", [["_dP]])
+vim.keymap.set("x", "<leader>p", [["_dP]], { desc = "Paste without yank" })
 
 -- next greatest remap ever : asbjornHaland
-vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
-vim.keymap.set("n", "<leader>Y", [["+Y]])
+vim.keymap.set({"n", "v"}, "<leader>y", [["+y]], { desc = "Yank to clipboard" })
+vim.keymap.set("n", "<leader>Y", [["+Y]], { desc = "Yank line to clipboard" })
 
-vim.keymap.set({"n", "v"}, "<leader>d", "\"_d")
+vim.keymap.set({"n", "v"}, "<leader>d", "\"_d", { desc = "Delete without yank" })
 
